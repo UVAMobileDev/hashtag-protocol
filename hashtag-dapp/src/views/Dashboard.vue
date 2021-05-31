@@ -15,8 +15,8 @@
             <div class="divider is-hidden-tablet">OR</div>
             <div class="column is-5 is-12-mobile">
               <article class="tile is-child">
-                <p class="title is-4 has-text-white">Tag some content</p>
-                <MintAndTag />
+                <p class="title is-4 has-text-white">Post a Url</p>
+                <UrlSearch />
               </article>
             </div>
           </div>
@@ -421,9 +421,9 @@ import Hashtag from "../components/Hashtag";
 import Header from "../components/Header";
 import MarkdownModal from "../components/MarkdownModal";
 import Mint from "../components/Mint";
-import MintAndTag from "../components/MintAndTag";
 import NftLink from "../components/NftLink";
 import PseudoOwners from "../components/PseudoOwners";
+import UrlSearch from "../components/UrlSearch";
 
 import { SNAPSHOT, FIRST_THOUSAND_HASHTAGS } from "@/queries";
 //import { mapGetters } from "vuex";
@@ -440,10 +440,10 @@ export default {
     Hashtag,
     Header,
     Mint,
-    MintAndTag,
     NftLink,
     PseudoOwners,
     TimestampFrom,
+    UrlSearch,
   },
   data() {
     return {

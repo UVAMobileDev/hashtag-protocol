@@ -247,6 +247,7 @@ const actions = {
     const { contracts, publisher } = web3Objects;
     const { erc721HashtagRegistryContract } = contracts;
     const { hashtagId, nftContract, nftId } = payload;
+    console.log("payload ", payload);
 
     // function tag(uint256 _hashtagId, address _nftContract, uint256 _nftId, address _publisher, address _tagger) payable public {
     const tx = await erc721HashtagRegistryContract.tag(

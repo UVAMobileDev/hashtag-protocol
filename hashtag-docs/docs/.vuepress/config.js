@@ -67,7 +67,7 @@ module.exports = {
   },
   // https://stackoverflow.com/questions/60009780/import-global-sass-variables-into-vuepress-components
   scss: {
-    prependData: `
+    additionalData: `
         @import "@styles/theme.scss";
       `,
   },
