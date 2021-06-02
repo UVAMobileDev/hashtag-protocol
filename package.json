@@ -16,6 +16,7 @@
     "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
+    "eslint": "^7.27.0",
     "serve": "^11.3.2"
   }
 }

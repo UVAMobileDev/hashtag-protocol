@@ -99,10 +99,11 @@ const actions = {
     const signer = provider.getSigner();
     const chain = state.networkId;
 
-    const hashtagProtocolContractAddress = utils.getContractAddressFromTruffleConf(
-      HashtagProtocolTruffleConf,
-      chain
-    );
+    const hashtagProtocolContractAddress =
+      utils.getContractAddressFromTruffleConf(
+        HashtagProtocolTruffleConf,
+        chain
+      );
 
     const hashtagProtocolContract = new ethers.Contract(
       hashtagProtocolContractAddress,
@@ -110,10 +111,8 @@ const actions = {
       signer
     );
 
-    const erc721HashtagRegistryAddress = utils.getContractAddressFromTruffleConf(
-      ERC721HashtagRegistry,
-      chain
-    );
+    const erc721HashtagRegistryAddress =
+      utils.getContractAddressFromTruffleConf(ERC721HashtagRegistry, chain);
 
     const erc721HashtagRegistryContract = new ethers.Contract(
       erc721HashtagRegistryAddress,
@@ -247,6 +246,7 @@ const actions = {
     const { contracts, publisher } = web3Objects;
     const { erc721HashtagRegistryContract } = contracts;
     const { hashtagId, nftContract, nftId } = payload;
+    /* eslint-disable-next-line no-console */
     console.log("payload ", payload);
 
     // function tag(uint256 _hashtagId, address _nftContract, uint256 _nftId, address _publisher, address _tagger) payable public {
